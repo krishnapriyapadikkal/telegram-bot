@@ -1,0 +1,28 @@
+[0;1;32m●[0m apache2.service - LSB: Apache2 web server
+   Loaded: loaded (/etc/init.d/apache2; bad; vendor preset: enabled)
+  Drop-In: /lib/systemd/system/apache2.service.d
+           └─apache2-systemd.conf
+   Active: [0;1;32mactive (running)[0m since Mon 2017-05-08 11:50:15 UTC; 3min 28s ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 14866 ExecStop=/etc/init.d/apache2 stop (code=exited, status=0/SUCCESS)
+  Process: 14892 ExecStart=/etc/init.d/apache2 start (code=exited, status=0/SUCCESS)
+    Tasks: 9
+   Memory: 14.4M
+      CPU: 120ms
+   CGroup: /system.slice/apache2.service
+           ├─14909 /usr/sbin/apache2 -k start
+           ├─14912 /usr/sbin/apache2 -k start
+           ├─14913 /usr/sbin/apache2 -k start
+           ├─14914 /usr/sbin/apache2 -k start
+           ├─14915 /usr/sbin/apache2 -k start
+           ├─14916 /usr/sbin/apache2 -k start
+           ├─17257 /usr/sbin/apache2 -k start
+           ├─17258 /usr/sbin/apache2 -k start
+           └─17259 /usr/sbin/apache2 -k start
+
+May 08 11:50:14 krishnapriya systemd[1]: Stopped LSB: Apache2 web server.
+May 08 11:50:14 krishnapriya systemd[1]: Starting LSB: Apache2 web server...
+May 08 11:50:14 krishnapriya apache2[14892]:  * Starting Apache httpd web server apache2
+May 08 11:50:14 krishnapriya apache2[14892]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+May 08 11:50:15 krishnapriya apache2[14892]:  *
+May 08 11:50:15 krishnapriya systemd[1]: Started LSB: Apache2 web server.
